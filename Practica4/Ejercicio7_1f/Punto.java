@@ -32,7 +32,7 @@ public class Punto {
 
     public double distancia(Punto p){
         double d = 0;
-        d = Math.sqrt(Math.pow((p.x - this.x),2) + Math.pow((p.y - this.y), 2));
+        d = Math.sqrt(Math.pow((p.getx() - this.x),2) + Math.pow((p.gety() - this.y), 2));
         return d;
     }
 

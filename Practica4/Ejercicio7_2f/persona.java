@@ -27,6 +27,8 @@ public class persona{
     public String getNombre() {
         return nombre;
     }
+
+    
     public void setApellido(String apellido) {
         this.apellido = apellido;
     }
@@ -43,23 +45,21 @@ public class persona{
         System.out.println(this.nombre + " " + this.apellido + " con DNI " + this.dni + " tiene " + this.edad + "años");
     }
     public boolean esMayorEdad(){
+        boolean mayor=true;
         if(this.edad<18){
-            return false;
-        }else{return true;}
+             mayor= false;
+        }
+        return mayor;
     }
     public boolean esJubilado(){
+        boolean jubilado = true;
         if(this.edad<65){
-            return false;
-        }else{return true;}
+            jubilado= false;
+        }
+        return jubilado;
     }
     public int diferenciaEdad(persona p){
         return (Math.abs(this.edad - p.edad));
     }
-
-
-
-
-
-
 
 }
